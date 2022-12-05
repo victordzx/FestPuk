@@ -1,15 +1,13 @@
-package com.example.festpuk.Anonimo;
+package com.example.festpuk;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.festpuk.R;
-
-public class OnboardingActivity extends AppCompatActivity {
+public class ClienteMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onboarding);
+        setContentView(R.layout.activity_cliente_main);
     }
 }

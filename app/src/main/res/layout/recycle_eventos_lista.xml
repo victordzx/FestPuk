@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/elementView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    android:background="@color/black"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="382dp"
+            android:layout_height="72dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/imEvento"
+                android:layout_width="382dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="#8BC34A" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="272dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textTituloEvento"
+                    android:layout_width="197dp"
+                    android:layout_height="47dp"
+                    android:text="Título del evento"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textFechaEvento"
+                    android:layout_width="192dp"
+                    android:layout_height="29dp"
+                    android:text="Dom. 11 de diciembre 2022"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buVerDetalles"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_white_rounded"
+                android:text="Ver detalles"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
