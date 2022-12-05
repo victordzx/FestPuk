@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.festpuk.Anonimo.RecuperarContraActivity;
+import com.example.festpuk.Anonimo.RegisterActivity;
 import com.example.festpuk.databinding.ActivityMainBinding;
 import com.example.festpuk.notification.MyFirebaseMessagingService;
 import com.example.festpuk.save.ReadSession;
@@ -51,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
                                             Session.rol = readSession.getRol();
                                             Session.correo = readSession.getCorreo();
                                             if (Session.rol.equals("Cliente")) {
-                                                goHome();
+                                                //goHome();
                                             } else if (Session.rol.equals("Organizador")) {
-                                                goHomeTI();
+                                                //goHomeTI();
                                             } else {
                                                 Toast.makeText(MainActivity.this, "Tu rol está pendiente", Toast.LENGTH_SHORT).show();
                                             }
@@ -93,16 +95,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void goRecuperar() {
-        Intent intent = new Intent(this, RecuperarCorreoActivity.class);
+        Intent intent = new Intent(this, RecuperarContraActivity.class);
         startActivity(intent);
     }
 
     private void goRegistro() {
-        Intent intent = new Intent(this, RegistroFormActivity.class);
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 
-    private void goHome(){
+/*    private void goHome(){
         Intent intent = new Intent(this, ClienteMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
@@ -112,5 +114,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TIMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-    }
+    }*/
 }

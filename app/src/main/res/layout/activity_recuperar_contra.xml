@@ -10,7 +10,6 @@
     android:background="@color/black"
     >
 
-
     <TextView
         android:id="@+id/title3"
         android:layout_width="match_parent"
@@ -25,57 +24,47 @@
         android:textSize="60sp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/background_blue_toprounded"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Dirección de correo"
+        android:textColor="#4CAF50"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Dirección de correo"
-            android:textColor="#4CAF50"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edMail"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_white_rounded"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:paddingStart="14dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/edMail"
-            android:layout_width="300dp"
-            android:layout_height="68dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/background_white_rounded"
-            android:hint="Correo"
-            android:inputType="textEmailAddress"
-            android:paddingStart="14dp"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buContinuar"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/background_green_rounded"
+        android:text="Continuar"
+        android:textColor="@color/white" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buContinuar"
-            android:layout_width="300dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
-            android:background="@drawable/background_green_rounded"
-            android:text="Continuar"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="301dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="60dp"
-            android:layout_marginTop="56dp"
-            android:gravity="left"
-            android:justificationMode="inter_word"
-            android:text="Se le ha enviado una nueva contraseña generada automáticamente. Se le redirigirá a la pantalla de inicio de sesión."
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+    <TextView
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="56dp"
+        android:gravity="left"
+        android:justificationMode="inter_word"
+        android:text="Se le ha enviado una nueva contraseña generada automáticamente. Se le redirigirá a la pantalla de inicio de sesión."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

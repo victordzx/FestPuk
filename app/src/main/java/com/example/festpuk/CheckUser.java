@@ -60,7 +60,7 @@ public class CheckUser extends AppCompatActivity {
                             Session.correo = readSession.getCorreo();
 
                             if (Session.rol.equals("Cliente")) {
-                                goHome();
+                                //goHome();
                             } else {
                                 Toast.makeText(CheckUser.this, "Tu rol está pendiente", Toast.LENGTH_SHORT).show();
                             }
@@ -77,11 +77,11 @@ public class CheckUser extends AppCompatActivity {
         }
     }
 
-    private void goHome(){
+/*    private void goHome(){
         Intent intent = new Intent(this, ClienteMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-    }
+    }*/
 
 
 
