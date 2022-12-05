@@ -1,9 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".Anonimo.RegisterActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arrow_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="Registra tu cuenta"
+            android:textColor="#4CAF50"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/ceviche_one" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/edNombreApellido"
+            android:text="Nombre y Apellido"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edNombreApellido"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_white_rounded"
+        android:inputType="text"
+        android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edCorreo"
+            android:text="Correo"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edCorreo"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_white_rounded"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edFechaNacimiento"
+            android:text="Fecha de nacimiento"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edFechaNacimiento"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_white_rounded"
+        android:inputType="date"
+        android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edDNI"
+            android:text="DNI"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edDNI"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_white_rounded"
+            android:inputType="number"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/raGenero"
+            android:text="Género"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <RadioGroup
+        android:id="@+id/raGenero"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4CAF50"
+            android:text="Masculino"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4CAF50"
+            android:text="Femenino"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4CAF50"
+            android:text="Otro"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/raRol"
+            android:text="Rol"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <RadioGroup
+        android:id="@+id/raRol"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4CAF50"
+            android:text="Cliente"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4CAF50"
+            android:text="Organizador"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edPassword1"
+            android:text="Contraseña"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edPassword1"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_white_rounded"
+        android:inputType="textPassword"
+        android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edPassword2"
+            android:text="Confirmar contraseña"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edPassword2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_white_rounded"
+        android:inputType="textPassword"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buContinuar"
+        android:layout_width="310dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_green_rounded"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
