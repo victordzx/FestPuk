@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "51596241995",
+    "project_id": "festpuk-iot",
+    "storage_bucket": "festpuk-iot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51596241995:android:c83d07c76b3cb0b9a0f1ce",
+        "android_client_info": {
+          "package_name": "com.example.festpuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51596241995-8apmk4rm2k1u1h9l6r9b4799rojlcmo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwYAWTSFuykPKe8gxr6g_UVNJXqeN7Xao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51596241995-8apmk4rm2k1u1h9l6r9b4799rojlcmo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
