@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckUser"
+    android:background="#4CAF50"
     android:gravity="center"
-    android:background="@color/white">
+    tools:context=".CheckUser">
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:scaleY="1.1"
-        android:src="@drawable/ic_festpuk"/>
+        android:src="@drawable/ic_festpuk" />
 
 
 </LinearLayout>
