@@ -1,3 +1,4 @@
-<resources>
-    <string name="app_name">festpuk</string>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name"
+        android:fontFamily="@font/ceviche_one">FestPuk</string>
 </resources>
