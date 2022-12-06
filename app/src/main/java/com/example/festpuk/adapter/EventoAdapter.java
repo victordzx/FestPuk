@@ -26,8 +26,6 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
     private Context context;
     private final RecycleviewerInterface recycleviewerInterface;
 
-
-
     @Override
     public int getItemCount() {
         return eventos.size();
@@ -54,10 +52,10 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         fecha = holder.itemView.findViewById(R.id.textFechaEvento);
 
         titulo.setText(evento.getTitulo());
-        fecha.setText((CharSequence) evento.getFecha());
+        fecha.setText(evento.getFecha());
 
-        StorageReference imageRef = FirebaseStorage.getInstance().getReference().child("equipos/"+evento.getFotourl());
-        Glide.with(context).load(imageRef).into(imagen);
+        //StorageReference imageRef = FirebaseStorage.getInstance().getReference().child("evento/"+evento.getFotourl());
+        //Glide.with(context).load(imageRef).into(imagen);
     }
 
     public EventoAdapter(List<Evento> itemList, Context context, RecycleviewerInterface recycleviewerInterface) {

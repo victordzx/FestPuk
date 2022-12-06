@@ -7,14 +7,14 @@ public class Cuenta {
     private String rol;
     private String correo;
     private String nombre;
-    private Date fechanac;
+    private String fechanac;
     private String gender;
     private int dni;
 
     public Cuenta(){
     }
 
-    public Cuenta(String rol, String correo, String nombre, Date fechanac, String gender, int dni){
+    public Cuenta(String rol, String correo, String nombre, String fechanac, String gender, int dni){
         this.rol = rol;
         this.correo = correo;
         this.nombre = nombre;
@@ -47,11 +47,11 @@ public class Cuenta {
         this.nombre = nombre;
     }
 
-    public Date getFechanac() {
+    public String getFechanac() {
         return fechanac;
     }
 
-    public void setFechanac(Date fechanac) {
+    public void setFechanac(String fechanac) {
         this.fechanac = fechanac;
     }
 

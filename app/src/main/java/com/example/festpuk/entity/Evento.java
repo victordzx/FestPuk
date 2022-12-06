@@ -11,7 +11,7 @@ public class Evento implements Serializable {
     private String descripcion;
     private String ubicacion;
     private String contacto;
-    private Date fecha;
+    private String fecha;
     private double precio;
     private int stock;
     private String fotourl;
@@ -19,7 +19,7 @@ public class Evento implements Serializable {
     public Evento(){
     }
 
-    public Evento(String titulo, Date fecha, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
+    public Evento(String titulo, String fecha, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
         this.titulo = titulo;
         this.fecha = fecha;
         this.organizador = organizador;
@@ -46,11 +46,11 @@ public class Evento implements Serializable {
         this.titulo = titulo;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

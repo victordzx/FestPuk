@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.example.festpuk.ClienteEventoActivity;
 import com.example.festpuk.R;
 import com.example.festpuk.adapter.EventoAdapter;
@@ -53,6 +54,7 @@ public class ClienteEventosFragment extends Fragment implements RecycleviewerInt
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         reference = firebaseDatabase.getReference("evento");
         View view = inflater.inflate(R.layout.fragment_cliente_eventos, container, false);
@@ -64,22 +66,20 @@ public class ClienteEventosFragment extends Fragment implements RecycleviewerInt
         if (notCreated) {
             notCreated = false;
 
-
             reference.orderByChild("stock").startAt(1).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    List<Evento> equipoList = new ArrayList<>();
+                    List<Evento> eventoList = new ArrayList<>();
                     for (DataSnapshot children : snapshot.getChildren()) {
-                        try {
-                            Evento evento = children.getValue(Evento.class);
-                            evento.setKey(children.getKey());
-                            equipoList.add(evento);
-                        } catch (Exception e) {
-
-                        }
+                        Evento evento = children.getValue(Evento.class);
+                        assert evento != null;
+                        evento.setKey(children.getKey());
+                        eventoList.add(evento);
                     }
-                    ClienteSession.setEventos(equipoList);
-                    reloadList();
+                    ClienteSession.setEventos(eventoList);
+                    eventoAdapter.setEventos(ClienteSession.getEventos());
+                    recyclerView.setAdapter(eventoAdapter);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(context));
                 }
 
                 @Override
@@ -88,19 +88,12 @@ public class ClienteEventosFragment extends Fragment implements RecycleviewerInt
                 }
             });
         } else {
-            reloadList();
+            eventoAdapter.setEventos(ClienteSession.getEventos());
+            recyclerView.setAdapter(eventoAdapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(context));
         }
-
         return view;
     }
-
-
-    public void reloadList() {
-        eventoAdapter.setEventos(ClienteSession.getEventos());
-        recyclerView.setAdapter(eventoAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(context));
-    }
-
 
     @Override
     public void onItemClick(int position) {
