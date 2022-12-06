@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Ver eventos"
+        android:id="@+id/eventos"
+        android:icon="@drawable/ic_baseline_event_note_32"/>
+    <item android:title="Mis entradas"
+        android:id="@+id/solicitudes"
+        android:icon="@drawable/ic_baseline_ticket_32"/>
+    <item android:title="Ver perfil"
+        android:id="@+id/perfil"
+        android:icon="@drawable/ic_baseline_account_circle_32"/>
+</menu>

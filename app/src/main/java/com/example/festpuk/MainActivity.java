@@ -21,6 +21,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         firebaseAuth.signInWithEmailAndPassword(binding.edCorreo.getText().toString(),
                                 binding.edPassword.getText().toString()).addOnCompleteListener(it -> {
                             if (it.isSuccessful()) {
-                                ref.child(firebaseAuth.getUid()).addValueEventListener(new ValueEventListener() {
+                                ref.child(Objects.requireNonNull(firebaseAuth.getUid())).addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                         ReadSession readSession = snapshot.getValue(ReadSession.class);
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                                             Session.rol = readSession.getRol();
                                             Session.correo = readSession.getCorreo();
                                             if (Session.rol.equals("Cliente")) {
-                                                //goHome();
+                                                goHome();
                                             } else if (Session.rol.equals("Organizador")) {
                                                 //goHomeTI();
                                             } else {
@@ -104,13 +106,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-/*    private void goHome(){
+    private void goHome(){
         Intent intent = new Intent(this, ClienteMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 
-    private void goHomeTI(){
+/*    private void goHomeTI(){
         Intent intent = new Intent(this, TIMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
