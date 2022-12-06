@@ -39,7 +39,7 @@
             android:layout_margin="20dp"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_lightblue_rounded">
+            android:background="@drawable/background_white_rounded">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_margin="24dp"
