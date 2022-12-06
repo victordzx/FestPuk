@@ -39,7 +39,6 @@ android {
 dependencies {
     implementation "com.google.firebase:firebase-iid:21.1.0"
     implementation 'com.pusher:push-notifications-android:1.9.0'
-    // implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
     implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     implementation 'androidx.navigation:navigation-fragment:2.3.5'

@@ -13,6 +13,14 @@ public class ClienteSession {
    // private static List<Solicitud> solicitudes = new ArrayList<>();
    // private static List<Historial> historialLista = new ArrayList<>();
 
+    public static List<Evento> getEventos() {
+        return eventoList;
+    }
+
+    public static void setEventos(List<Evento> eventoList) {
+        ClienteSession.eventoList = eventoList;
+    }
+
     public static void finish(){
         eventoList = new ArrayList<>();
      //   solicitudes = new ArrayList<>();

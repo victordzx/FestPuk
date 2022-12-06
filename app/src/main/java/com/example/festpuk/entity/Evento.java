@@ -5,11 +5,13 @@ import java.util.Date;
 
 public class Evento implements Serializable {
 
+    private String key;
     private String titulo;
     private String organizador;
     private String descripcion;
     private String ubicacion;
     private String contacto;
+    private Date fecha;
     private double precio;
     private int stock;
     private String fotourl;
@@ -17,8 +19,9 @@ public class Evento implements Serializable {
     public Evento(){
     }
 
-    public Evento(String titulo, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
+    public Evento(String titulo, Date fecha, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
         this.titulo = titulo;
+        this.fecha = fecha;
         this.organizador = organizador;
         this.descripcion = descripcion;
         this.contacto = contacto;
@@ -27,12 +30,28 @@ public class Evento implements Serializable {
         this.fotourl = fotourl;
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     public String getTitulo() {
         return titulo;
     }
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 
     public String getOrganizador() {
