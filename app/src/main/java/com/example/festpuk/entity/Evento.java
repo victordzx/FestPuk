@@ -1,7 +1,9 @@
 package com.example.festpuk.entity;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class Evento implements Serializable {
 
@@ -12,14 +14,17 @@ public class Evento implements Serializable {
     private String ubicacion;
     private String contacto;
     private String fecha;
+    // SimpleDateFormat fecha = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
     private double precio;
     private int stock;
+    private int limitecompra;
     private String fotourl;
 
     public Evento(){
+        // this.fecha = fecha.format(Calendar.getInstance().getTime());
     }
 
-    public Evento(String titulo, String fecha, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
+    public Evento(String titulo, String /* SimpleDateFormat */ fecha, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
         this.titulo = titulo;
         this.fecha = fecha;
         this.organizador = organizador;
@@ -28,6 +33,10 @@ public class Evento implements Serializable {
         this.precio = precio;
         this.stock = stock;
         this.fotourl = fotourl;
+    }
+
+    public int getLimitecompra() {
+        return limitecompra;
     }
 
     public String getKey() {

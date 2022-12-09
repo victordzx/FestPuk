@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".PagoEventoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloEvento"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/ceviche_one"
+                android:text="TeleFest"
+                android:textColor="#4CAF50"
+                android:textSize="60sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teFechaHora"
+                android:text="15 dic. 2022 - 17:00"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:labelFor="@id/edTipoEntrada"
+            android:text="Elija el tipo de entrada"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edTipoEntrada"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_white_rounded"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edNumeroEntradas"
+            android:text="Numero de entradas a comprar"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edNumeroEntradas"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_white_rounded"
+            android:inputType="number"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:labelFor="@id/edNumeroTarjeta"
+            android:text="Ingrese datos de la tarjeta"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edNumeroTarjeta"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_white_rounded"
+            android:inputType="number"
+            android:text=" Numero de la tarjeta"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edNumeroTarjeta"
+                android:text="Límite de compra: "
+                android:textColor="#4CAF50"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edLimiteCompra"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:text="X"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/edNumeroTarjeta"
+                android:text="entradas"
+                android:textColor="#4CAF50"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edMesAno"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/background_white_rounded"
+            android:inputType="number"
+            android:text=" mm/aa"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/edCVV"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_white_rounded"
+            android:inputType="number"
+            android:text=" CVV"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Total a pagar"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:labelFor="@id/raPrecioTotal"
+            android:text="S/. 10.00"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buEfectuarCompra"
+            android:layout_width="310dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_green_rounded"
+            android:text="Efectuar compra"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
