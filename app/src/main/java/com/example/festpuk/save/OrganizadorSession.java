@@ -1,4 +1,4 @@
 package com.example.festpuk.save;
 
-public class EntradasSession {
+public class OrganizadorSession {
 }

@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Festpuk"
         tools:targetApi="31">
         <activity
+            android:name=".OrganizadorMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".EventoCreadoExitosoActivity"
             android:exported="false" />
         <activity
