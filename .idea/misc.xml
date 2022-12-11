@@ -9,7 +9,7 @@
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1995" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_check_user.xml" value="0.25" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_compra_exitosa.xml" value="0.1" />
-        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_entradas_evento.xml" value="0.16259057971014493" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_entradas_evento.xml" value="0.1598731884057971" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_evento.xml" value="0.1" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_main.xml" value="0.16" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_validacion_compra.xml" value="0.16259057971014493" />
@@ -25,6 +25,7 @@
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/header.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_entradas_lista.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_eventos_lista.xml" value="0.23780487804878048" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_mis_entradas.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/menu/logout.xml" value="0.22" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/menu/menu_cliente.xml" value="0.2" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/menu/menu_cliente_eventos.xml" value="0.22" />
