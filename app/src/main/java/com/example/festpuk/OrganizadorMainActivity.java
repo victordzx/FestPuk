@@ -20,6 +20,7 @@ import com.example.festpuk.cliente.ClientePerfilFragment;
 import com.example.festpuk.databinding.ActivityClienteMainBinding;
 import com.example.festpuk.organizador.OrgaEventosFragment;
 import com.example.festpuk.save.ClienteSession;
+import com.example.festpuk.save.OrganizadorSession;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class OrganizadorMainActivity extends AppCompatActivity {
@@ -52,7 +53,7 @@ public class OrganizadorMainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 FirebaseAuth.getInstance().signOut();
-                ClienteSession.finish();
+                OrganizadorSession.finish();
                 startActivity(intent);
             }
             return false;
