@@ -17,8 +17,10 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.festpuk.cliente.ClienteEntradasFragment;
 import com.example.festpuk.cliente.ClienteEventosFragment;
 // import com.example.festpuk.cliente.ClienteHistorialFragment;
+import com.example.festpuk.cliente.ClientePerfilFragment;
 import com.example.festpuk.databinding.*;
 import com.example.festpuk.cliente.ClienteEventosFragment;
 import com.example.festpuk.save.ClienteSession;
@@ -32,8 +34,8 @@ public class ClienteMainActivity extends AppCompatActivity {
     ActivityClienteMainBinding binding;
 
     ClienteEventosFragment eventosFragment;
-//    ClienteSolicitudesFragment solicitudesFragment;
-//    ClienteHistorialFragment historialFragment;
+    ClienteEntradasFragment entradasFragment;
+    ClientePerfilFragment perfilFragment;
 
     public static int navValue = 0;
     DrawerLayout drawerLayout;
@@ -65,19 +67,19 @@ public class ClienteMainActivity extends AppCompatActivity {
 
         if (eventosFragment == null) {
             eventosFragment = new ClienteEventosFragment();
-            //solicitudesFragment = new ClienteSolicitudesFragment();
-            //historialFragment = new ClienteHistorialFragment();
+            entradasFragment = new ClienteEntradasFragment();
+            perfilFragment = new ClientePerfilFragment();
         }
         switch (navValue) {
             case 0:
                 replaceFragment(eventosFragment);
                 break;
-           /* case 1:
-                replaceFragment(solicitudesFragment);
+           case 1:
+                replaceFragment(entradasFragment);
                 break;
-            case 2:
-                replaceFragment(historialFragment);
-                break; */
+           case 2:
+                replaceFragment(perfilFragment);
+                break;
         }
 
 
@@ -87,12 +89,12 @@ public class ClienteMainActivity extends AppCompatActivity {
             if (id == R.id.eventos) {
                 replaceFragment(eventosFragment);
                 navValue = 0;
-            /*} else if (id == R.id.solicitudes) {
-                replaceFragment(solicitudesFragment);
+            } else if (id == R.id.solicitudes) {
+                replaceFragment(entradasFragment);
                 navValue = 1;
             } else if (id == R.id.perfil) {
-                replaceFragment(historialFragment);
-                navValue = 2; */
+                replaceFragment(perfilFragment);
+                navValue = 2;
             }
             return true;
         });
@@ -125,8 +127,8 @@ public class ClienteMainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         eventosFragment = null;
-        //solicitudesFragment = null;
-        //historialFragment = null;
+        entradasFragment = null;
+        perfilFragment = null;
         super.onDestroy();
     }
 }

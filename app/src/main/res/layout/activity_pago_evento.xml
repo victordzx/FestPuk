@@ -188,7 +188,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:labelFor="@id/raPrecioTotal"
+            android:id="@+id/edPrecioTotal"
             android:text="S/. 10.00"
             android:textStyle="bold"
             android:gravity="right"

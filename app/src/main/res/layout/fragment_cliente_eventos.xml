@@ -16,19 +16,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleViewer"
             android:layout_width="match_parent"
-            android:layout_height="625dp"
+            android:layout_height="match_parent"
             android:visibility="visible" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buCrearEvento"
-            android:layout_width="200dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="99dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/background_green_rounded"
-            android:text="crear evento"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
 
     </LinearLayout>
 

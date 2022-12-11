@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                                             if (Session.rol.equals("Cliente")) {
                                                 goHome();
                                             } else if (Session.rol.equals("Organizador")) {
-                                                //goHomeTI();
+                                                goHomeOrga();
                                             } else {
                                                 Toast.makeText(MainActivity.this, "Tu rol está pendiente", Toast.LENGTH_SHORT).show();
                                             }
@@ -112,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-/*    private void goHomeTI(){
-        Intent intent = new Intent(this, TIMainActivity.class);
+   private void goHomeOrga(){
+        Intent intent = new Intent(this, OrganizadorMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-    }*/
+    }
 }
