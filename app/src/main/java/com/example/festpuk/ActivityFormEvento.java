@@ -116,21 +116,21 @@ public class ActivityFormEvento extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference ref = firebaseDatabase.getReference();
-        DatabaseReference refequipos = ref.child("eventos");
+        DatabaseReference refeventos = ref.child("evento");
 
         Evento evento = new Evento(nombreEventoStr, fechaEventoStr, descripcionEventoStr, ubicacionEventoStr, contactoEventoStr, precioEntradaDouble, stockInt, imageUri.toString());
 
         String imagenesEventoStr = imageUri.toString();
 
-        String key = refequipos.push().getKey();
-        refequipos.child(key).child("titulo").setValue(nombreEventoStr);
-        refequipos.child(key).child("contacto").setValue(contactoEventoStr);
-        refequipos.child(key).child("descripcion").setValue(descripcionEventoStr);
-        refequipos.child(key).child("ubicacion").setValue(ubicacionEventoStr);
-        refequipos.child(key).child("stock").setValue(stockInt);
-        refequipos.child(key).child("fecha").setValue(fechaEventoStr);
-        refequipos.child(key).child("fotourl").setValue(imagenesEventoStr);
-        refequipos.child(key).child("precio").setValue(precioEntradaDouble);
+        String key = refeventos.push().getKey();
+        refeventos.child(key).child("titulo").setValue(nombreEventoStr);
+        refeventos.child(key).child("contacto").setValue(contactoEventoStr);
+        refeventos.child(key).child("descripcion").setValue(descripcionEventoStr);
+        refeventos.child(key).child("ubicacion").setValue(ubicacionEventoStr);
+        refeventos.child(key).child("stock").setValue(stockInt);
+        refeventos.child(key).child("fecha").setValue(fechaEventoStr);
+        refeventos.child(key).child("fotourl").setValue(imagenesEventoStr);
+        refeventos.child(key).child("precio").setValue(precioEntradaDouble);
 
         Toast.makeText(ActivityFormEvento.this, "Guardado!", Toast.LENGTH_SHORT).show();
     }
