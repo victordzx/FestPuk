@@ -55,9 +55,6 @@
             android:name=".Anonimo.RecuperarContraActivity"
             android:exported="false" />
         <activity
-            android:name=".Anonimo.CodigoSeguridadActivity"
-            android:exported="false" />
-        <activity
             android:name=".Anonimo.RegisterActivity"
             android:exported="false" />
         <activity

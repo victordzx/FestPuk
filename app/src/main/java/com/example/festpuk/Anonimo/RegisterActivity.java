@@ -7,11 +7,15 @@ import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.example.festpuk.ClienteMainActivity;
+import com.example.festpuk.OrganizadorMainActivity;
 import com.example.festpuk.R;
 import com.example.festpuk.databinding.ActivityRegisterBinding;
 import com.example.festpuk.entity.Cuenta;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -95,16 +99,26 @@ public class RegisterActivity extends AppCompatActivity {
                     if (t.isSuccessful()) {
                         Cuenta cuenta = new Cuenta(rol, email, nombreapellido, fechanac, gender, dni);
                         FirebaseDatabase.getInstance().getReference("cuenta").child(FirebaseAuth.getInstance().getUid()).setValue(cuenta);
-                        Toast.makeText(this, "Se ha creado la cuenta, verifica tu correo", Toast.LENGTH_SHORT).show();
-                        goCodigoSeguridad();
+                        Toast.makeText(this, "Se ha creado la cuenta", Toast.LENGTH_SHORT).show();
+                        if(Objects.equals(cuenta.getRol(), "Organizador")){
+                            goHomeOrga();
+                        } else{
+                            goHomeCliente();
+                        };
                     } else
                         Toast.makeText(this, "Tu contraseña es muy debil", Toast.LENGTH_SHORT).show();
                 }
         );
     }
 
-    private void goCodigoSeguridad(){
-        Intent intent = new Intent(this, CodigoSeguridadActivity.class);
+    private void goHomeOrga(){
+        Intent intent = new Intent(this, OrganizadorMainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
+
+    private void goHomeCliente(){
+        Intent intent = new Intent(this, ClienteMainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
