@@ -7,26 +7,32 @@
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/drawable/background_green_rounded.xml" value="0.1995" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/drawable/background_white_rounded.xml" value="0.1995" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1995" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_admin_evento.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_check_user.xml" value="0.25" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_compra_exitosa.xml" value="0.1" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_entradas_evento.xml" value="0.1598731884057971" />
-        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_evento.xml" value="0.1" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_evento.xml" value="0.16" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_main.xml" value="0.16" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_cliente_validacion_compra.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_codigo_seguridad.xml" value="0.21" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_evento_cancelado.xml" value="0.16259057971014493" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_evento_creado_exitoso.xml" value="0.16259057971014493" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_form_evento.xml" value="0.25" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_login.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_onboarding.xml" value="0.16" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_pago_evento.xml" value="0.36151079136690645" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_recuperar_contra.xml" value="0.2" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/activity_validacion_evento.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/fragment_cliente_entradas.xml" value="0.16259057971014493" />
-        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/fragment_cliente_eventos.xml" value="0.1" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/fragment_cliente_eventos.xml" value="0.22" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/fragment_orga_eventos.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/header.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_entradas_lista.xml" value="0.16259057971014493" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_eventos_lista.xml" value="0.23780487804878048" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_mis_entradas.xml" value="0.16259057971014493" />
+        <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/layout/recycle_miseventos_orga.xml" value="0.25" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/menu/logout.xml" value="0.22" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/menu/menu_cliente.xml" value="0.2" />
         <entry key="..\:/2022-2/1TEL05 AppsIoT/FestPuk/app/src/main/res/menu/menu_cliente_eventos.xml" value="0.22" />

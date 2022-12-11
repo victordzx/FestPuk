@@ -16,6 +16,18 @@
         android:theme="@style/Theme.Festpuk"
         tools:targetApi="31">
         <activity
+            android:name=".EventoCreadoExitosoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ValidacionEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityFormEvento"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEventoActivity"
+            android:exported="false" />
+        <activity
             android:name=".EventoCanceladoActivity"
             android:exported="false" />
         <activity
