@@ -13,10 +13,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.festpuk.ActivityFormEvento;
 import com.example.festpuk.AdminEventoActivity;
+import com.example.festpuk.OrganizadorMainActivity;
 import com.example.festpuk.R;
+import com.example.festpuk.ValidacionEventoActivity;
 import com.example.festpuk.adapter.EventoAdapter;
 import com.example.festpuk.databinding.FragmentClienteEventosBinding;
+import com.example.festpuk.databinding.FragmentOrgaEventosBinding;
 import com.example.festpuk.entity.Evento;
 import com.example.festpuk.interfaces.RecycleviewerInterface;
 import com.example.festpuk.save.OrganizadorSession;
@@ -33,7 +37,7 @@ public class OrgaEventosFragment extends Fragment implements RecycleviewerInterf
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference reference;
-    FragmentClienteEventosBinding binding;
+    FragmentOrgaEventosBinding binding;
     RecyclerView recyclerView;
     EventoAdapter eventoAdapter;
     Context context;
@@ -43,8 +47,6 @@ public class OrgaEventosFragment extends Fragment implements RecycleviewerInterf
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = FragmentClienteEventosBinding.inflate(getLayoutInflater());
-
     }
 
     @Override

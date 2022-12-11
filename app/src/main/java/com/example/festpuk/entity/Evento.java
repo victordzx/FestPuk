@@ -24,11 +24,11 @@ public class Evento implements Serializable {
         // this.fecha = fecha.format(Calendar.getInstance().getTime());
     }
 
-    public Evento(String titulo, String /* SimpleDateFormat */ fecha, String organizador, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
+    public Evento(String titulo, String /* SimpleDateFormat */ fecha, String descripcion, String ubicacion, String contacto, double precio, int stock, String fotourl){
         this.titulo = titulo;
         this.fecha = fecha;
-        this.organizador = organizador;
         this.descripcion = descripcion;
+        this.ubicacion = ubicacion;
         this.contacto = contacto;
         this.precio = precio;
         this.stock = stock;
